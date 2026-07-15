@@ -5,56 +5,32 @@
 </template>
 
 <script setup>
-useSeoMeta({
-  // Default
-  charset: 'utf-8',
-  xUaCompatible: 'IE=edge',
-  viewport: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no',
-  formatDetection: 'telephone=no',
-  handheldfriendly: 'true',
-
-  // Title e Description
-  title: 'Nome do Projeto',
-  ogTitle: 'Nome do Projeto',
-  description: 'Descrição do Projeto',
-  ogDescription: 'Descrição do Projeto',
-  keywords: 'palavras-chave do projeto',
-  robots: 'index, follow',
-  googlebot: 'index, follow, max-image-preview:large',
-  author: 'Nome do Autor',
-
-  // Theme
-  themeColor: '#000000',
-  msapplicationTileColor: '#000000',
-  msapplicationNavbuttonColor: '#000000',
-  appleMobileWebAppCapable: 'yes',
-  appleMobileWebAppStatusBarStyle: 'black-translucent',
-  mobileWebAppCapable: 'yes',
-  appleMobileWebAppTitle: 'Nome do Projeto',
-  applicationName: 'Nome do Projeto',
-
-  // Open Graph
-  ogType: 'website',
-  ogUrl: 'https://link-do-projeto.com',
-  ogSiteName: 'Nome do Projeto',
-  ogLocale: 'pt_BR',
-  ogImage: 'https://link-do-projeto.com/share.png',
-  ogImageType: 'image/png',
-  ogImageWidth: '1920',
-  ogImageHeight: '1080',
-  ogImageAlt: 'Nome do Projeto',
-
-  // Twitter Card
-  twitterCard: 'summary_large_image',
-  twitterTitle: 'Nome do Projeto',
-  twitterDescription: 'Descrição do Projeto',
-  twitterImage: 'https://link-do-projeto.com/share.png'
-})
-
 useHead({
   htmlAttrs: {
     lang: 'pt-BR'
   },
+  title: 'Nome do Projeto',
+  meta: [
+    { charset: 'utf-8' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' },
+    { name: 'description', content: 'Descrição do Projeto' },
+    { name: 'robots', content: 'index, follow' },
+    { name: 'theme-color', content: '#ffffff' },
+    { name: 'author', content: 'Nome do Autor' },
+    { property: 'og:title', content: 'Nome do Projeto' },
+    { property: 'og:description', content: 'Descrição do Projeto' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://link-do-projeto.com' },
+    { property: 'og:site_name', content: 'Nome do Projeto' },
+    { property: 'og:locale', content: 'pt_BR' },
+    { property: 'og:image', content: 'https://link-do-projeto.com/share.png' },
+    { property: 'og:image:width', content: '1920' },
+    { property: 'og:image:height', content: '1080' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Nome do Projeto' },
+    { name: 'twitter:description', content: 'Descrição do Projeto' },
+    { name: 'twitter:image', content: 'https://link-do-projeto.com/share.png' }
+  ],
   link: [
     { rel: 'canonical', href: 'https://link-do-projeto.com' },
     { rel: 'shortcut icon', href: '/favicon.ico' },
@@ -77,14 +53,12 @@ useHead({
   ]
 })
 
-onMounted(() => {
-  if (process.client) {
-    watch(
-      () => useRoute().path,
-      () => {
-        window.scrollTo(0, 0)
-      }
-    )
+watch(
+  () => useRoute().path,
+  () => {
+    if (process.client) {
+      window.scrollTo(0, 0)
+    }
   }
-})
+)
 </script>

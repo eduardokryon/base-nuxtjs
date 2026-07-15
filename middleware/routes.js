@@ -1,5 +1,8 @@
 export default defineNuxtRouteMiddleware((to) => {
   if (to.matched.length === 0) {
-    return navigateTo({ name: 'erro' })
+    throw createError({
+      statusCode: 404,
+      statusMessage: 'Página não encontrada'
+    })
   }
 })

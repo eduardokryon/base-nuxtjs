@@ -1,14 +1,19 @@
 <template>
-  <nav></nav>
+  <nav class="nav">
+    <Svgs nome="lecdt" />
+  </nav>
 </template>
 
-<script setup></script>
+<script setup>
+const state = reactive({
+  aberto: false
+})
+</script>
 
-<style scoped>
-nav {
-  display: flex;
-}
-/* Responsivo */
-@media screen and (max-width: 1140px) {
-}
+<style lang="sass" scoped>
+.nav
+  display: flex
+  width: 100%
+
+@media screen and (max-width: 1000px)
 </style>

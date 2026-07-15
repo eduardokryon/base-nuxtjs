@@ -10,10 +10,16 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/image": "^1.10.0",
+    "axios": "^1.10.4",
+    "mitt": "^3.0.1"
+  },
+  "devDependencies": {
     "@pinia/nuxt": "^0.10.1",
-    "nuxt": "^3.16.0",
-    "pinia": "^3.0.1",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0"
+    "nuxt": "^3.17.5",
+    "pinia": "^3.0.3",
+    "sass-embedded": "^1.89.0",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
   }
 }
