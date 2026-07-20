@@ -1,0 +1,71 @@
+{
+  "site": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Base NuxtJs",
+      "description": "Base template NuxtJS com SASS, SSR, Otimização de imagens e Pinia — otimizado para descoberta por IA e mecanismos de resposta.",
+      "url": "https://eduardolecdt.com.br"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Eduardo Brito",
+      "url": "https://github.com/eduardolecdt"
+    }
+  ],
+  "pages": {
+    "\\index": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Base NuxtJs",
+        "url": "https://eduardolecdt.com.br\\index"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://eduardolecdt.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "\\index",
+            "item": "https://eduardolecdt.com.br/\\index"
+          }
+        ]
+      }
+    ],
+    "\\sitemap": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Sitemap",
+        "url": "https://eduardolecdt.com.br\\sitemap"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://eduardolecdt.com.br/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "\\sitemap",
+            "item": "https://eduardolecdt.com.br/\\sitemap"
+          }
+        ]
+      }
+    ]
+  }
+}

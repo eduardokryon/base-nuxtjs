@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "generated": "2026-07-20T17:16:56.170Z",
+  "site": {
+    "title": "Base NuxtJs",
+    "description": "Base template NuxtJS com SASS, SSR, Otimização de imagens e Pinia — otimizado para descoberta por IA e mecanismos de resposta.",
+    "url": "https://eduardolecdt.com.br"
+  },
+  "documents": [
+    {
+      "url": "https://eduardolecdt.com.br/\\index",
+      "title": "\\index"
+    },
+    {
+      "url": "https://eduardolecdt.com.br/\\sitemap",
+      "title": "Sitemap"
+    }
+  ],
+  "metadata": {
+    "totalDocuments": 2,
+    "generator": "aeo.js",
+    "generatorUrl": "https://aeojs.org"
+  }
+}

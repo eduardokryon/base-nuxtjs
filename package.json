@@ -7,12 +7,17 @@
     "dev": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "postbuild": "node -e \"import('aeo.js/nuxt').then(m => m.postBuild({ title: 'Base NuxtJs', description: 'Base template NuxtJS com SASS, SSR, Otimização de imagens e Pinia', url: 'https://eduardolecdt.com.br', widget: { enabled: false } }))\""
   },
   "dependencies": {
     "@nuxt/image": "^1.10.0",
+    "aeo.js": "^0.0.16",
     "axios": "^1.10.4",
-    "mitt": "^3.0.1"
+    "mitt": "^3.0.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "retune": "^0.7.6"
   },
   "devDependencies": {
     "@pinia/nuxt": "^0.10.1",
